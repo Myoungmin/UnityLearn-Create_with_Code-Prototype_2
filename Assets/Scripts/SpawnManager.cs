@@ -20,6 +20,11 @@ public class SpawnManager : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.S))
         {
+            SpawnRandomAnimal();
+        }
+
+        void SpawnRandomAnimal()
+        {
             //Randomly generate animal index.
             int animalIndex = Random.Range(0, animalPrefabs.Length);
 
